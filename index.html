@@ -159,6 +159,51 @@
       }
       .worries .closing span{color:var(--coral-deep)}
 
+      /* ---------- Your voice ---------- */
+      .voice-sec{padding:clamp(44px,6vw,72px) 0 0}
+      .voice-sec .voice-intro{max-width:860px;margin-bottom:40px}
+      .voice-intro h2{font-size:clamp(1.35rem,5.8vw,2.1rem)}
+      .voice-content{max-width:860px;margin:0 auto}
+      .voice-group + .voice-group{margin-top:32px}
+      .voice-group h3{font-size:1rem;font-weight:700;margin-bottom:14px}
+      .voice-list{
+        display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;
+        list-style:none;margin:0;padding:0;
+      }
+      .voice-list li{
+        position:relative;display:flex;align-items:center;min-height:64px;
+        padding:16px 20px 16px 46px;background:var(--surface);
+        border:1.5px solid var(--line);border-radius:var(--radius);
+        font-size:.98rem;font-weight:700;line-height:1.75;
+      }
+      .voice-list li::before{
+        content:"“";position:absolute;left:16px;top:17px;color:var(--coral);
+        font-family:Georgia,serif;font-size:1.7rem;font-weight:700;line-height:1;
+      }
+      .voice-list--wishes li:last-child{grid-column:1/-1;width:calc((100% - 14px)/2);justify-self:center}
+      .voice-message{max-width:760px;margin:36px auto 0;color:var(--ink-soft);line-height:2}
+      .voice-message p{margin:0}
+      .voice-testimonial{
+        margin:28px 0;padding:26px 30px;background:var(--coral-soft);
+        border-radius:var(--radius);text-align:center;
+      }
+      .voice-testimonial p{font-weight:700;color:var(--ink);line-height:1.9}
+      .voice-testimonial footer{
+        margin-top:14px;padding:0;background:none;border:0;
+        color:var(--ink-soft);font-size:.85rem;
+      }
+      .voice-story p + p{margin-top:20px}
+      .voice-message .voice-emphasis{margin-top:24px;color:var(--coral-deep);font-weight:700;text-align:center}
+      .voice-message .voice-invitation{margin-top:20px;text-align:center}
+      @media (max-width:640px){
+        .voice-sec .voice-intro{margin-bottom:30px}
+        .voice-list{grid-template-columns:1fr;gap:12px}
+        .voice-list--wishes li:last-child{width:100%}
+        .voice-list li{padding:15px 18px 15px 44px}
+        .voice-message{margin-top:28px}
+        .voice-testimonial{padding:22px 20px}
+      }
+
       /* ---------- Steps ---------- */
       .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
       .step{
@@ -465,6 +510,52 @@
           <li>今の仕事や活動に、「教える力」という軸をもう一つ加えたい</li>
         </ul>
         <p class="closing reveal">ひとつでも当てはまったら、<span>コミュトレ講師養成講座</span>の説明会がお役に立てます。</p>
+      </div>
+    </section>
+
+    <!-- ============ YOUR VOICE ============ -->
+    <section class="voice-sec" aria-labelledby="voice-heading">
+      <div class="wrap">
+        <div class="sec-head voice-intro reveal">
+          <span class="kicker">あなたの本音の声</span>
+          <h2 id="voice-heading">全ての願いを叶えます。</h2>
+          <p>「私には無理」と思う気持ちも、「こんな未来がほしい」という願いも、どちらも大切な本音です。</p>
+        </div>
+        <div class="voice-content">
+          <div class="voice-group reveal">
+            <h3>こんな不安を抱えていませんか</h3>
+            <ul class="voice-list">
+              <li>私は講師はできない！</li>
+              <li>自分ができるとは思えない！</li>
+              <li>人前で話したことはない！</li>
+              <li>話すのは苦手！</li>
+            </ul>
+          </div>
+          <div class="voice-group reveal">
+            <h3>こんな願いはありませんか</h3>
+            <ul class="voice-list voice-list--wishes">
+              <li>自分で仕事をしたい！</li>
+              <li>起業を考えているけど商品がない！</li>
+              <li>在庫を持たない仕事をしたい！</li>
+              <li>先生ポジションで居続けられる！</li>
+              <li>新しいチャレンジをしたい！</li>
+            </ul>
+          </div>
+          <div class="voice-message">
+            <p class="reveal">「人前で話したことがない」——大丈夫です。むしろ、できなかった経験がある人ほど、受講生の気持ちが分かる講師になれます。本講座では、講師としてのスキルを基礎から学び、実践トレーニングを重ねていきます。</p>
+            <blockquote class="voice-testimonial reveal">
+              <p>実は、私自身も人前で全く話せない人でした。<br />今のように講師を仕事にするなんて、夢にも思っていなかったんです。</p>
+              <footer>—— 宝来光子（本講座 講師）</footer>
+            </blockquote>
+            <div class="voice-story reveal">
+              <p>人類が言葉を話し始めたその時から、人の悩みの中心には、いつも「人間関係」がありました。時代が変わっても変わらない、この普遍の問題を解決する力——それが「コミュニケーション能力」です。</p>
+              <p>しかも講師という仕事は、在庫を持たず、場所も選びません。あなたの経験と「伝える力」そのものが、商品になります。</p>
+              <p>まずは自分自身がその力を習得し、次に人に教えられるまで。トレーニングとサポートで、最後まで伴走します。</p>
+            </div>
+            <p class="voice-emphasis reveal">自分自身の人生を好転させ、人間関係を劇的に改善させるコミュニケーション能力！</p>
+            <p class="voice-invitation reveal">学んで、実践して、教える側へ。<br />一緒に学んでみませんか？</p>
+          </div>
+        </div>
       </div>
     </section>
 
