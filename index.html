@@ -160,7 +160,7 @@
       .worries .closing span{color:var(--coral-deep)}
 
       /* ---------- Your voice ---------- */
-      .voice-sec{padding:clamp(44px,6vw,72px) 0 0}
+      .voice-sec{padding:clamp(44px,6vw,72px) 0;background:var(--bg-soft)}
       .voice-sec .voice-intro{max-width:860px;margin-bottom:40px}
       .voice-intro h2{font-size:clamp(1.35rem,5.8vw,2.1rem)}
       .voice-content{max-width:860px;margin:0 auto}
@@ -184,7 +184,8 @@
       .voice-message{max-width:760px;margin:36px auto 0;color:var(--ink-soft);line-height:2}
       .voice-message p{margin:0}
       .voice-testimonial{
-        margin:28px 0;padding:26px 30px;background:var(--coral-soft);
+        margin:28px 0;padding:26px 30px;background:var(--surface);
+        border:2px solid var(--mustard);border-top-width:6px;
         border-radius:var(--radius);text-align:center;
       }
       .voice-testimonial p{font-weight:700;color:var(--ink);line-height:1.9}
@@ -205,6 +206,7 @@
       }
 
       /* ---------- Steps ---------- */
+      .about-sec{background:var(--surface)}
       .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
       .step{
         background:var(--surface);border:1.5px solid var(--line);border-radius:var(--radius);
@@ -560,7 +562,7 @@
     </section>
 
     <!-- ============ ABOUT / STEPS ============ -->
-    <section>
+    <section class="about-sec">
       <div class="wrap">
         <div class="sec-head reveal">
           <span class="kicker">コミュトレ講師養成講座とは</span>
